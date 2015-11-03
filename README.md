@@ -46,7 +46,7 @@ Then, override the git repo URL:
 "repositories": [
     {
         "type": "git",
-         "url": "https://github.com/AlphaPipe/otphp.git"
+         "url": "https://github.com/AlphaPipe-ORIGIN/otphp.git"
     }
 ]
 ```
