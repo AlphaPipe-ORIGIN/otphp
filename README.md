@@ -21,16 +21,39 @@ The release process [is described here](doc/Release.md).
 
 ## Prerequisites
 
-This library needs at least `PHP 5.6`.
-It has been successfully tested using `PHP 5.6`, `PHP 7` and `HHVM`
+This library needs at least `PHP 5.5.9`.
+It has been successfully tested using `PHP 5.5.9`, `PHP 5.6`, `PHP 7` and `HHVM`
 
 ## Installation
 
 The preferred way to install this library is to rely on Composer:
 
-```sh
-composer require "spomky-labs/otphp" "~6.0.0"
+##### 1. 
+
+Add the repo name to your `composer.json` file:
+
+```php
+"require": {
+    "spomky-labs/otphp": "~6.0.0",
+}
 ```
+
+##### 2.
+
+Then, override the git repo URL:
+
+```php
+"repositories": [
+    {
+        "type": "git",
+         "url": "https://github.com/AlphaPipe-ORIGIN/otphp.git"
+    }
+]
+```
+
+##### 3.
+
+Lastly, run `composer update`
 
 ## TOTP or HOTP?
 
